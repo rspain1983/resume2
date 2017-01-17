@@ -1,6 +1,4 @@
-
-
-var bio {
+var bio = {
 	"name" : "Randy",
 	"role" : "Aspiring Web developer",
 	"contacts" : {
@@ -11,14 +9,14 @@ var bio {
 	},
 		"welcomeMessage" : "welcome and things",
 		"skills" : ["Overwatch", "Poker", "Super Charming"],
-		"bioPic" : "images.fry/jpg"
+		"bioPic" : "images./fry.jpg"
 };
 
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
@@ -26,7 +24,7 @@ $("#header").append(formattedBioPic);
 $("#header").append(formattedWelcomeMsg);
 
 
-var education  {
+var education = {
 	"schools": [
 	{
 		"name" : "Excelsio College", 
@@ -43,7 +41,7 @@ var education  {
   ]
 };
 
-var work {
+var work = {
 	"jobs" : [
 	{
 		"company" : "500 Club Casino",
@@ -69,7 +67,7 @@ var work {
   ]
 };
 
-var projects {
+var projects = {
 	"projects" : [
 	{
 		"title" : "Really cool thing I did",
