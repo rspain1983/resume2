@@ -12,7 +12,7 @@ var bio {
 		"welcomeMessage" : "welcome and things",
 		"skills" : ["Overwatch", "Poker", "Super Charming"],
 		"bioPic" : "images.fry/jpg"
-}
+};
 
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -41,7 +41,7 @@ var education  {
 		"major" : "Multiple Subject Teaching Credential"
     }
   ]
-}
+};
 
 var work {
 	"jobs" : [
@@ -67,7 +67,7 @@ var work {
 		"duties" : ["create lessons", "instruct students in all subjects", "adminster exams and examine testing data"]
 	}
   ]
-}
+};
 
 var projects {
 	"projects" : [
@@ -78,7 +78,7 @@ var projects {
 
 	}
   ]
-}
+};
 
 
 
