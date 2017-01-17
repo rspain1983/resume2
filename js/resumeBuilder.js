@@ -82,37 +82,3 @@ var projects {
 
 
 
-bio.display = function(){
-
-    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    $("#header").prepend(formattedRole);
-
-    var formattedName = HTMLheaderName.replace("%data%", bio.name);
-    $("#header").prepend(formattedName);
-
-    var formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
-    $("#topContacts").append(formattedMobile);
-
-    var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
-    $("#topContacts").append(formattedEmail);
-
-    var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
-    $("#topContacts").append(formattedGithub);
-}
-
- if(bio.skills.length > 0) {
-
-        $("#header").append(HTMLskillsStart);
-
-        var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-        $("#skills").append(formattedSkill);
-
-        formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-        $("#skills").append(formattedSkill);
-}
